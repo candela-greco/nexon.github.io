@@ -18,18 +18,14 @@ function NavbarNav() {
                         <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
                         <Nav.Link as={NavLink} to="/productos">Productos</Nav.Link>
 
-                        {/* Contenedor personalizado para el dropdown */}
                         <Nav.Item
                             className="custom-dropdown"
                             onMouseEnter={() => setShowDropdown(true)}
                             onMouseLeave={() => setShowDropdown(false)}
                         >
-                            {/* NavLink en "Mi cuenta" */}
                             <Nav.Link as={NavLink} to="/login" className="nav-link">
                                 Mi cuenta
                             </Nav.Link>
-                            
-                            {/* Dropdown personalizado */}
                             <div className={`dropdown-menu ${showDropdown ? "show" : ""}`}>
                                 <NavLink className="dropdown-item" to="/login">Iniciar Sesión</NavLink>
                                 <NavLink className="dropdown-item" to="/register">Registrarse</NavLink>

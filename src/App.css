@@ -21,7 +21,10 @@
 .nav-link {
   color: #e0e1dd !important;
   padding: 0 40px 0 20px !important;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out !important;}
+  text-align: right;
+    margin-left: 22px;
+  transition: transform 0.3s ease-in, color 0.3s ease-in !important;
+}
 .nav-link.active{
   transform: scale(1.2) !important;
   color: #8ed4ba !important;
@@ -135,7 +138,16 @@
   color: #8ed4ba;
   transform: scale(1.2);
 }
-
+.Carousel {
+  padding: 0 200px;
+  height: 500px;
+}
+.Carousel img {
+  width: 100%;
+  height: 500px;
+  object-fit: fit;
+  object-position: center;
+}
 
 @media (min-width: 1200px) {
   .Herosection {
