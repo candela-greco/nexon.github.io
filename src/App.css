@@ -1,4 +1,7 @@
 .Navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000 !important;
   background-color: #131716 !important;
   color: #e0e1dd !important;
   display: flex;
@@ -75,7 +78,40 @@
 .SolucionesItem:hover {
   transform: scale(1.2);
 }
-
+.Footer {
+  margin-top: 66px;
+  padding: 11px;
+  background-color: #131716;
+  color: #e0e1dd;
+  display: flex;
+}
+.Redes {
+  font-size: 2em;
+  padding: 66px 0 0 15px;
+}
+.Icon {
+  padding: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+.Icon:hover {
+  color: #8ed4ba;
+  transform: scale(1.5);
+}
+.LinksUtiles {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0 0 44px;
+}
+.LinksUtiles a {
+  text-decoration: none !important;
+  color: #e0e1dd;
+  padding-bottom: 11px;
+  transition: transform 0.3s ease-in-out;
+}
+.LinksUtiles a:hover {
+  color: #8ed4ba;
+  transform: scale(1.2);
+}
 
 
 @media (min-width: 1200px) {
@@ -84,5 +120,8 @@
   }
   .Soluciones {
     gap: 111px;
+  }
+  .Footer {
+    justify-content: space-around;
   }
 }

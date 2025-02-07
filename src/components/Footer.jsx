@@ -1,25 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <>
+        <div className="Footer">
         <div className="Redes">
-            <FontAwesomeIcon icon={ faFacebook }/>
-            <FontAwesomeIcon icon={ faInstagram }/>
-            <FontAwesomeIcon icon={ faWhatsapp }/>
-        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
-                    className="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="https://www.instagram.com/roma.rescates" target="_blank"><i
-                    className="fa-brands fa-instagram fa-2xl"></i></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><i
-                    className="fa-brands fa-whatsapp fa-2xl"></i></a>
+            <FontAwesomeIcon icon={ faFacebook } target="_blank" className="Icon"/>
+            <FontAwesomeIcon icon={ faInstagram } target="_blank" className="Icon"/>
+            <FontAwesomeIcon icon={ faWhatsapp } target="_blank" className="Icon"/>
         </div>
         <div className="LinksUtiles">
-
+            <Link to="/">Home</Link>
+            <Link to="/productos">Productos</Link>
+            <Link to="/perfil">Perfil</Link>
+            <Link to="/carrito">Carrito</Link>
+            <Link to="/politica">Politica de privacidad</Link>
         </div>
-        </>
+        </div>
     )
 }
 
