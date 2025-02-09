@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: 'https://candela-greco.github.io/nexon.github.io/',
+  base: '/nexon.github.io/',
 });
