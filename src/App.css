@@ -22,10 +22,10 @@
   color: #e0e1dd !important;
   padding: 0 40px 0 20px !important;
   text-align: right;
-    margin-left: 22px;
+  margin-left: 22px;
   transition: transform 0.3s ease-in, color 0.3s ease-in !important;
 }
-.nav-link.active{
+.nav-link.active {
   transform: scale(1.2) !important;
   color: #8ed4ba !important;
 }
@@ -95,7 +95,7 @@
   text-align: center;
   padding: 55px 11px 22px 22px;
   border-radius: 50%;
-  background-color: #778DA9;
+  background-color: #778da9;
   color: #e0e1dd;
   font-weight: bold;
   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
@@ -105,7 +105,10 @@
   transform: scale(1.2);
 }
 .Footer {
-  margin-top: 66px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: 11px;
   background-color: #131716;
   color: #e0e1dd;
@@ -139,7 +142,6 @@
   transform: scale(1.2);
 }
 .Carousel {
-  padding: 0 200px;
   height: 500px;
 }
 .Carousel img {
@@ -151,6 +153,28 @@
 .ProductCards {
   margin-top: 222px;
 }
+.Background {
+  position: relative;
+}
+.BackgroundImage {
+  background-color: #8ed4ba;
+  width: 100%;
+  height: 100vh;
+  opacity: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.LoginCard {
+  margin-top: 33px;
+  padding: 55px;
+  border-radius: 11px !important;
+  box-shadow: 22px 22px 11px rgba(0, 0, 0, 0.5) !important;
+}
+
 
 @media (min-width: 1200px) {
   .Herosection {
@@ -161,5 +185,15 @@
   }
   .Footer {
     justify-content: space-around;
+  }
+  .Carousel {
+    padding: 0 200px;
+  }
+  .BackgroundImage {
+    height: 768px;
+    width: 100%;
+  }
+  .LoginCard {
+    width: 777px;
   }
 }
