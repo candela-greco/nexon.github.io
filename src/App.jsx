@@ -6,6 +6,7 @@ import NavbarNav from "./components/Nav.jsx";
 import Home from "./components/Home.jsx";
 import Footer from "./components/Footer.jsx";
 import Products from "./components/Products.jsx";
+import Favorites from "./components/Favorites.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Products />} />
+        <Route path="/favoritos" element={<Favorites />} />
       </Routes>
       <Footer />
     </>

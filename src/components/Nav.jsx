@@ -2,10 +2,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function NavbarNav() {
     const [showDropdown, setShowDropdown] = useState(false);
+    const [favoriteCount, setFavoriteCount] = useState(0);
+
+    useEffect(() => {
+        const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+        setFavoriteCount(storedFavorites.length);
+    }, []);
 
     return (
         <Navbar expand="lg" className="Navbar">
@@ -32,6 +38,10 @@ function NavbarNav() {
                             </div>
                         </Nav.Item>
 
+                        <Nav.Link as={NavLink} to="/favoritos">
+                            Favoritos {favoriteCount > 0 && `(${favoriteCount})`}
+                        </Nav.Link>
+
                         <Nav.Link as={NavLink} to="/carrito">Carrito</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -41,4 +51,3 @@ function NavbarNav() {
 }
 
 export default NavbarNav;
-
