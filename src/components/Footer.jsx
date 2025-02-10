@@ -15,7 +15,7 @@ const Footer = () => {
             <Link to="/productos">Productos</Link>
             <Link to="/perfil">Perfil</Link>
             <Link to="/carrito">Carrito</Link>
-            <Link to="/politica">Politica de privacidad</Link>
+            <Link to="/politicadeprivacidad">Politica de privacidad</Link>
         </div>
         </div>
     )

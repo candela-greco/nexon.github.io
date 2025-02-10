@@ -106,7 +106,7 @@
 }
 .Footer {
   margin-top: 44px;
-  position: static;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -156,6 +156,7 @@
 }
 .Background {
   position: relative;
+  padding: 22px;
 }
 .BackgroundColor {
   background-color: #8ed4ba;
@@ -175,6 +176,11 @@
   border-radius: 11px !important;
   box-shadow: 22px 22px 11px rgba(0, 0, 0, 0.5) !important;
 }
+.Politica {
+  padding: 22px;
+  background-color: #415a77;
+  color: #e0e1dd;
+}
 
 
 @media (min-width: 1200px) {
@@ -189,6 +195,9 @@
   }
   .Carousel {
     padding: 0 200px;
+  }
+  .Card {
+    width: 1111px;
   }
   .BackgroundImage {
     height: 768px;

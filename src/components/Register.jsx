@@ -7,6 +7,7 @@ import {
   CardBody,
   CardTitle,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
@@ -52,13 +53,26 @@ function Register() {
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="Codigo postal">
-                  <Form.Label>Codigo postal</Form.Label>
+                  <Form.Label>C. postal</Form.Label>
                   <Form.Control />
                 </Form.Group>
               </Row>
 
               <Form.Group className="mb-3" id="Checkbox">
-                <Form.Check type="checkbox" label="Acepto politica de privacidad" />
+                <Form.Check
+                  type="checkbox"
+                  label={
+                    <>
+                      Acepto{" "}
+                      <Link
+                        to="/politicadeprivacidad"
+                        style={{ color: "#007bff" }}
+                      >
+                        política de privacidad
+                      </Link>
+                    </>
+                  }
+                />
               </Form.Group>
 
               <Button variant="primary" type="Enviar">

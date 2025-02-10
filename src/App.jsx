@@ -9,6 +9,7 @@ import Products from "./components/Products.jsx";
 import Favorites from "./components/Favorites.jsx";
 import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
+import Politica from "./components/PoliticaPrivacidad.jsx"
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
+        <Routes>
+          <Route path="/politicadeprivacidad" element={<Politica />}/>
+        </Routes>
     </div>
   );
 }
