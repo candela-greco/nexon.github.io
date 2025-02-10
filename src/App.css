@@ -105,7 +105,8 @@
   transform: scale(1.2);
 }
 .Footer {
-  position: fixed;
+  margin-top: 44px;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -156,7 +157,7 @@
 .Background {
   position: relative;
 }
-.BackgroundImage {
+.BackgroundColor {
   background-color: #8ed4ba;
   width: 100%;
   height: 100vh;
@@ -168,7 +169,7 @@
   bottom: 0;
   z-index: -1;
 }
-.LoginCard {
+.Card {
   margin-top: 33px;
   padding: 55px;
   border-radius: 11px !important;

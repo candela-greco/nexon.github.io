@@ -3,9 +3,9 @@ import { Card, Form, Button } from "react-bootstrap";
 const Login = () => {
   return (
     <div className="Background">
-      <div className="BackgroundImage"></div>
+      <div className="BackgroundColor"></div>
       <div className="d-flex justify-content-center align-items-center">
-        <Card className="LoginCard" >
+        <Card className="Card">
           <Card.Body>
             <Card.Title className="text-center">Iniciar Sesión</Card.Title>
             <Form>
