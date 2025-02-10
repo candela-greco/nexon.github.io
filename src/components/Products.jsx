@@ -26,7 +26,7 @@ const Products = () => {
         <img
             className="d-block w-100"
             src={Remera}
-            alt="Imagen producto Short"
+            alt="Imagen producto Remera"
             />
             <Carousel.Caption>
             <h3>Second slide label</h3>
@@ -37,7 +37,7 @@ const Products = () => {
         <img
             className="d-block w-100"
             src={Mono}
-            alt="Imagen producto Short"
+            alt="Imagen producto Mono"
             />        <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>
@@ -47,7 +47,7 @@ const Products = () => {
         </Carousel.Item>
         </Carousel>
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={Remera1} />
+        <Card.Img variant="top" src={Remera1} alt="Foto producto Remera"/>
         <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
